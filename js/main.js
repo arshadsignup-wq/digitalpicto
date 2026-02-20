@@ -290,12 +290,12 @@
           } else {
             submitBtn.disabled = false;
             submitBtn.innerHTML = 'Send Message <span class="arrow">&rarr;</span>';
-            alert('Something went wrong. Please try again or email us directly at hello@digitalpicto.com');
+            alert('Something went wrong. Please try again or email us directly at Digitalpicto832@gmail.com');
           }
         }).catch(function () {
           submitBtn.disabled = false;
           submitBtn.innerHTML = 'Send Message <span class="arrow">&rarr;</span>';
-          alert('Connection error. Please try again or email us directly at hello@digitalpicto.com');
+          alert('Connection error. Please try again or email us directly at Digitalpicto832@gmail.com');
         });
       }
     });
