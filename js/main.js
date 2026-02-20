@@ -272,9 +272,31 @@
       }
 
       if (valid) {
-        contactForm.style.display = 'none';
-        var successEl = document.querySelector('.form-success');
-        if (successEl) successEl.classList.add('show');
+        var submitBtn = contactForm.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <span class="arrow">&rarr;</span>';
+
+        var formData = new FormData(contactForm);
+
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(function (response) {
+          if (response.ok) {
+            contactForm.style.display = 'none';
+            var successEl = document.querySelector('.form-success');
+            if (successEl) successEl.classList.add('show');
+          } else {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Send Message <span class="arrow">&rarr;</span>';
+            alert('Something went wrong. Please try again or email us directly at hello@digitalpicto.com');
+          }
+        }).catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Send Message <span class="arrow">&rarr;</span>';
+          alert('Connection error. Please try again or email us directly at hello@digitalpicto.com');
+        });
       }
     });
   }
