@@ -305,6 +305,7 @@
       var email = contactForm.querySelector('[name="email"]');
       var business = contactForm.querySelector('[name="business"]');
       var message = contactForm.querySelector('[name="message"]');
+      var website = contactForm.querySelector('[name="website"]');
 
       if (!name.value.trim()) {
         name.closest('.form-group').classList.add('error');
@@ -324,6 +325,20 @@
       if (!message.value.trim()) {
         message.closest('.form-group').classList.add('error');
         valid = false;
+      }
+
+      // Website is optional. Only validate it when something was typed, and
+      // accept "company.com" as readily as a full https:// address.
+      if (website && website.value.trim()) {
+        var site = website.value.trim();
+        if (!/^https?:\/\//i.test(site)) site = 'https://' + site;
+        var hostOk = /^https?:\/\/[^\s./?#]+(\.[^\s./?#]+)+([/?#]\S*)?$/i.test(site);
+        if (!hostOk) {
+          website.closest('.form-group').classList.add('error');
+          valid = false;
+        } else {
+          website.value = site;
+        }
       }
 
       if (!valid) {
