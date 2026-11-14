@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO Services | Search Engine Optimization for SMEs | Digital Picto</title>
-  <meta name="description" content="Get found by the people searching for your services. Digital Picto offers expert SEO services including keyword research, technical SEO, on-page optimization, content strategy, and link building for SMEs in the UAE.">
+  <title>SEO Services | Search Engine Optimization for SMEs</title>
+  <meta name="description" content="Get found by the people searching for your services. Digital Picto offers expert SEO services including keyword research, technical SEO, on-page optimization.">
   <meta name="keywords" content="SEO services, search engine optimization, keyword research, technical SEO, link building, local SEO, on-page optimization, SEO agency UAE">
-  <link rel="canonical" href="https://digitalpicto.online/services/seo.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/seo">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="SEO Services | Search Engine Optimization for SMEs">
+  <meta property="og:description" content="Get found by the people searching for your services. Digital Picto offers expert SEO services including keyword research, technical SEO, on-page optimization.">
+  <meta property="og:url" content="https://digitalpicto.online/services/seo">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO Services | Search Engine Optimization for SMEs">
+  <meta name="twitter:description" content="Get found by the people searching for your services. Digital Picto offers expert SEO services including keyword research, technical SEO, on-page optimization.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -57,24 +79,37 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "SEO Services", "item": "https://digitalpicto.online/services/seo" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -83,12 +118,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -96,23 +133,23 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>SEO Services</span>
         </nav>
         <h1 class="display-xl">Search Engine Optimization<br>That <span class="gradient-text">Actually Ranks</span></h1>
         <p class="service-desc text-lg">Most businesses treat SEO like a checkbox. Post a few blogs, sprinkle in some keywords, and hope for the best. That is not a strategy. We take a systematic, data-driven approach to search engine optimization that puts your business in front of the people who are actively looking for what you sell. No shortcuts, no black-hat tricks. Just sustainable organic growth built on solid foundations.</p>
-        <a href="../contact.html" class="btn btn-primary">Get Your Free SEO Audit <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Get Your Free SEO Audit <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </section>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included -->
-  <section class="section">
+  <section class="section section--tint">
     <div class="container">
       <div class="section-header reveal">
         <span class="label">What's Included</span>
@@ -122,49 +159,49 @@
 
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Technical SEO Audit</h4>
+            <h3>Technical SEO Audit</h3>
             <p>We crawl your entire website to identify speed issues, broken links, crawl errors, indexing problems, and structural gaps that hold your rankings back.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Keyword Research and Strategy</h4>
+            <h3>Keyword Research and Strategy</h3>
             <p>We dig into the terms your ideal customers actually type into Google and build a prioritized keyword map based on search volume, intent, and competition.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>On-Page Optimization</h4>
+            <h3>On-Page Optimization</h3>
             <p>From title tags and meta descriptions to header hierarchy and internal linking, we optimize every page to speak clearly to both users and search engines.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Content Strategy</h4>
+            <h3>Content Strategy</h3>
             <p>We develop a content roadmap that targets the right topics at every stage of the buyer journey, turning your website into a magnet for qualified organic traffic.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Link Building</h4>
+            <h3>Link Building</h3>
             <p>We earn high-quality backlinks through outreach, digital PR, and content partnerships. No spammy directories or bought links. Just real authority, built over time.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Local SEO</h4>
+            <h3>Local SEO</h3>
             <p>For businesses serving specific areas in the UAE, we optimize your Google Business Profile, build local citations, and get you ranking in the local map pack.</p>
           </div>
         </div>
@@ -173,7 +210,7 @@
   </section>
 
   <!-- Our Process -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -226,26 +263,26 @@
 
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#128200;</div>
-          <h4>Higher Organic Rankings</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.2l6-6 4 4 8-8"/><path d="M15.2 7.2H21v5.8"/></svg></div>
+          <h3>Higher Organic Rankings</h3>
           <p>Your target keywords start climbing to page one, putting your business in front of people who are actively searching for your products and services.</p>
         </div>
 
         <div class="result-card">
-          <div class="result-icon">&#128101;</div>
-          <h4>More Qualified Traffic</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.3"/><path d="M3 20.2a6 6 0 0 1 12 0"/><path d="M16.5 5.2a3.3 3.3 0 0 1 0 6.3"/><path d="M21 20.2a5 5 0 0 0-3.6-4.6"/></svg></div>
+          <h3>More Qualified Traffic</h3>
           <p>Not just any traffic. Visitors with real purchase intent who are already looking for exactly what you offer. That means better leads and higher conversion rates.</p>
         </div>
 
         <div class="result-card">
-          <div class="result-icon">&#128176;</div>
-          <h4>Lower Customer Acquisition Cost</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="9" cy="7" rx="5.2" ry="3"/><path d="M3.8 7v3.9c0 1.7 2.3 3 5.2 3 .6 0 1.2-.1 1.7-.2"/><ellipse cx="15" cy="13.5" rx="5.2" ry="3"/><path d="M9.8 13.5v3.9c0 1.7 2.3 3 5.2 3s5.2-1.3 5.2-3v-3.9"/></svg></div>
+          <h3>Lower Customer Acquisition Cost</h3>
           <p>Unlike paid ads that stop the moment you pause your budget, organic traffic keeps flowing. Over time, the cost per lead from SEO drops significantly compared to other channels.</p>
         </div>
 
         <div class="result-card">
-          <div class="result-icon">&#127919;</div>
-          <h4>Stronger Brand Authority</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Stronger Brand Authority</h3>
           <p>Consistently showing up at the top of search results builds trust. People naturally trust businesses that Google recommends, and that credibility compounds over time.</p>
         </div>
       </div>
@@ -253,7 +290,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -321,11 +358,35 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/pretty-party-platters">
+            <div class="case-card-top"><span class="case-num">11</span><span class="case-tag">SEO &middot; USA</span></div>
+            <h3>Pretty Party Platters</h3>
+            <p>Ten months of SEO for a US catering business: organic traffic from 670 to 2,800 a month, keywords from 669 to 1,400, and 262 pages now cited across ChatGPT, AI Overviews, AI Mode and Gemini.</p>
+            <div class="case-chips"><span class="case-chip"><b>2.8K</b> Monthly organic visits, from 670</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Get Found<br><span class="gradient-text">By the Right People?</span></h2>
       <p class="text-lg">Book a free SEO audit and we will show you exactly where your website stands, what opportunities you are missing, and how to start ranking for the keywords that matter to your business.</p>
-      <a href="../contact.html" class="btn btn-primary">Book Your Free SEO Audit <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Book Your Free SEO Audit <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -337,51 +398,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm-sales-pipeline.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-7323">Email address</label>
+              <input type="email" id="sub-email-7323" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

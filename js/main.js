@@ -1,6 +1,6 @@
 /* ========================================
    Digital Picto - Main JavaScript v2
-   Brand: Crimson Red Particles
+   Particle color follows the --accent-rgb token in css/styles.css
    ======================================== */
 
 (function () {
@@ -11,6 +11,11 @@
   if (canvas) {
     const ctx = canvas.getContext('2d');
     let width, height, particles, mouse;
+
+    // Read the brand color from the stylesheet so the particle network always
+    // matches the palette; no color is hardcoded here.
+    const accentRGB = (getComputedStyle(document.documentElement)
+      .getPropertyValue('--accent-rgb') || '224, 103, 63').trim();
 
     mouse = { x: null, y: null, radius: 160 };
 
@@ -29,7 +34,7 @@
           vx: (Math.random() - 0.5) * 0.35,
           vy: (Math.random() - 0.5) * 0.35,
           size: Math.random() * 2 + 0.4,
-          opacity: Math.random() * 0.3 + 0.1,
+          opacity: Math.random() * 0.13 + 0.04,
         });
       }
     }
@@ -60,10 +65,10 @@
           }
         }
 
-        // Draw particle (brand red)
+        // Draw particle
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(190, 45, 45, ' + p.opacity + ')';
+        ctx.fillStyle = 'rgba(' + accentRGB + ', ' + p.opacity + ')';
         ctx.fill();
 
         // Connect nearby particles
@@ -73,11 +78,11 @@
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 130) {
-            const alpha = 0.05 * (1 - dist / 130);
+            const alpha = 0.03 * (1 - dist / 130);
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = 'rgba(190, 45, 45, ' + alpha + ')';
+            ctx.strokeStyle = 'rgba(' + accentRGB + ', ' + alpha + ')';
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }
@@ -234,11 +239,61 @@
     }
   });
 
+  /* ----- Lead attribution -----------------------------------------
+     Stores first-touch campaign data so an enquiry arrives with a source
+     attached instead of appearing from nowhere. */
+  var ATTR_KEY = 'dp_attribution';
+
+  function captureAttribution() {
+    var stored;
+    try { stored = JSON.parse(sessionStorage.getItem(ATTR_KEY) || 'null'); } catch (err) { stored = null; }
+    if (stored) return stored;
+
+    var params = new URLSearchParams(window.location.search);
+    var data = {
+      utm_source:   params.get('utm_source')   || '',
+      utm_medium:   params.get('utm_medium')   || '',
+      utm_campaign: params.get('utm_campaign') || '',
+      utm_content:  params.get('utm_content')  || '',
+      utm_term:     params.get('utm_term')     || '',
+      gclid:        params.get('gclid')        || '',
+      fbclid:       params.get('fbclid')       || '',
+      referrer:     document.referrer || 'direct',
+      landing_page: window.location.pathname,
+      first_seen:   new Date().toISOString()
+    };
+    try { sessionStorage.setItem(ATTR_KEY, JSON.stringify(data)); } catch (err) {}
+    return data;
+  }
+
+  var attribution = captureAttribution();
+
   /* ----- Contact Form Validation ----- */
   var contactForm = document.getElementById('contact-form');
 
+  function showFormError(msg) {
+    if (!contactForm) return;
+    var box = contactForm.querySelector('.form-status');
+    if (!box) {
+      box = document.createElement('p');
+      box.className = 'form-status';
+      box.setAttribute('role', 'alert');
+      box.setAttribute('aria-live', 'assertive');
+      contactForm.appendChild(box);
+    }
+    box.textContent = msg;
+    box.classList.add('show');
+  }
+
+  function clearFormError() {
+    if (!contactForm) return;
+    var box = contactForm.querySelector('.form-status');
+    if (box) { box.classList.remove('show'); box.textContent = ''; }
+  }
+
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
+      clearFormError();
       e.preventDefault();
       var valid = true;
 
@@ -271,12 +326,22 @@
         valid = false;
       }
 
+      if (!valid) {
+        var firstBad = contactForm.querySelector('.form-group.error input, .form-group.error select, .form-group.error textarea');
+        if (firstBad) firstBad.focus();
+        showFormError('Please check the highlighted fields and try again.');
+      }
+
       if (valid) {
         var submitBtn = contactForm.querySelector('button[type="submit"]');
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Sending... <span class="arrow">&rarr;</span>';
 
         var formData = new FormData(contactForm);
+        Object.keys(attribution).forEach(function (k) {
+          if (attribution[k]) formData.append(k, attribution[k]);
+        });
+        formData.append('page_title', document.title);
 
         fetch(contactForm.action, {
           method: 'POST',
@@ -290,12 +355,12 @@
           } else {
             submitBtn.disabled = false;
             submitBtn.innerHTML = 'Send Message <span class="arrow">&rarr;</span>';
-            alert('Something went wrong. Please try again or email us directly at Digitalpicto832@gmail.com');
+            showFormError('That didn\'t send. Please try again, or email us directly at Digitalpicto832@gmail.com');
           }
         }).catch(function () {
           submitBtn.disabled = false;
           submitBtn.innerHTML = 'Send Message <span class="arrow">&rarr;</span>';
-          alert('Connection error. Please try again or email us directly at Digitalpicto832@gmail.com');
+          showFormError('We couldn\'t reach the server. Check your connection and try again, or email Digitalpicto832@gmail.com');
         });
       }
     });
@@ -309,17 +374,100 @@
     if (question) {
       question.addEventListener('click', function () {
         var wasOpen = item.classList.contains('open');
-        faqItems.forEach(function (other) { other.classList.remove('open'); });
-        if (!wasOpen) item.classList.add('open');
+        faqItems.forEach(function (other) {
+          other.classList.remove('open');
+          // Keep aria-expanded in step with the visual state; without this,
+          // assistive tech is told every panel is closed.
+          var q = other.querySelector('.faq-question');
+          if (q) q.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('open');
+          question.setAttribute('aria-expanded', 'true');
+        }
       });
     }
   });
 
-  /* ----- Active Nav Link ----- */
-  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  /* ----- Keep collapsed FAQ answers out of the a11y tree ----- */
+  faqItems.forEach(function (item) {
+    var answer = item.querySelector('.faq-answer');
+    var question = item.querySelector('.faq-question');
+    if (!answer || !question) return;
+    if (!answer.id) {
+      answer.id = 'faq-answer-' + Math.random().toString(36).slice(2, 9);
+    }
+    question.setAttribute('aria-controls', answer.id);
+    var sync = function () {
+      answer.setAttribute('aria-hidden', item.classList.contains('open') ? 'false' : 'true');
+    };
+    sync();
+    question.addEventListener('click', function () { setTimeout(sync, 0); });
+  });
+
+
+  /* ----- Blog category filter ----- */
+  var filterChips = document.querySelectorAll('.filter-chip');
+  if (filterChips.length) {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.blog-card[data-cat]'));
+    var status = document.getElementById('filter-status');
+
+    function applyFilter(want) {
+      var shown = 0;
+      // Filtering changes layout after the reveal observer has run, so the
+      // grid must be marked visible or the surviving cards stay at opacity 0.
+      var grid = document.querySelector('.blog-grid');
+      if (grid) grid.classList.add('visible');
+      cards.forEach(function (card) {
+        var match = (want === 'all' || card.getAttribute('data-cat') === want);
+        card.hidden = !match;
+        if (match) shown++;
+      });
+      if (status) {
+        var chip = document.querySelector('.filter-chip[data-filter="' + want + '"]');
+        var label = chip ? chip.firstChild.textContent.trim() : want;
+        status.textContent = want === 'all'
+          ? 'Showing all ' + shown + ' articles.'
+          : 'Showing ' + shown + ' article' + (shown === 1 ? '' : 's') + ' in ' + label + '.';
+      }
+    }
+
+    filterChips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        filterChips.forEach(function (c) {
+          c.classList.remove('is-active');
+          c.setAttribute('aria-pressed', 'false');
+        });
+        chip.classList.add('is-active');
+        chip.setAttribute('aria-pressed', 'true');
+        var want = chip.getAttribute('data-filter');
+        applyFilter(want);
+        var url = new URL(window.location);
+        if (want === 'all') { url.searchParams.delete('topic'); }
+        else { url.searchParams.set('topic', want); }
+        window.history.replaceState({}, '', url);
+      });
+    });
+
+    // deep link: /blog?topic=seo
+    var initial = new URLSearchParams(window.location.search).get('topic');
+    if (initial) {
+      var target = document.querySelector('.filter-chip[data-filter="' + initial + '"]');
+      if (target) target.click();
+    }
+  }
+
+  /* ----- Active Nav Link -----
+     URLs are extensionless, so compare resolved paths rather than filenames.
+     A section link also stays active on its child pages (/blog on a post). */
+  var here = window.location.pathname.replace(/\/+$/, '') || '/';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(function (link) {
-    var href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    var raw = link.getAttribute('href');
+    if (!raw || /^(https?:|mailto:|tel:|#)/.test(raw)) return;
+    var target;
+    try { target = new URL(raw, window.location.href).pathname.replace(/\/+$/, '') || '/'; }
+    catch (e) { return; }
+    if (target === here || (target !== '/' && here.indexOf(target + '/') === 0)) {
       link.classList.add('active');
     }
   });

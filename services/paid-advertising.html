@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paid Advertising Services | Google Ads & Meta Ads | Digital Picto</title>
-  <meta name="description" content="Expert paid advertising services including Google Ads management and Meta Ads campaigns. Our PPC management and paid media strategies deliver real ROI for SMEs in the UAE.">
+  <title>Paid Advertising Services | Google Ads & Meta Ads</title>
+  <meta name="description" content="Expert paid advertising services including Google Ads management and Meta Ads campaigns. Our PPC management and paid media strategies deliver real ROI for SMEs.">
   <meta name="keywords" content="paid advertising services, Google Ads management, Meta Ads agency, PPC management, paid media, Google Ads UAE, Facebook Ads agency">
-  <link rel="canonical" href="https://digitalpicto.online/services/paid-advertising.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/paid-advertising">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Paid Advertising Services | Google Ads & Meta Ads">
+  <meta property="og:description" content="Expert paid advertising services including Google Ads management and Meta Ads campaigns. Our PPC management and paid media strategies deliver real ROI for SMEs.">
+  <meta property="og:url" content="https://digitalpicto.online/services/paid-advertising">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Paid Advertising Services | Google Ads & Meta Ads">
+  <meta name="twitter:description" content="Expert paid advertising services including Google Ads management and Meta Ads campaigns. Our PPC management and paid media strategies deliver real ROI for SMEs.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -38,23 +60,36 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "Paid Advertising", "item": "https://digitalpicto.online/services/paid-advertising" }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -63,12 +98,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -76,20 +113,20 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>Paid Advertising</span>
         </nav>
         <h1 class="display-xl">Paid Advertising That<br><span class="gradient-text">Actually Pays You Back</span></h1>
         <p class="service-desc">Here is the truth about paid advertising: most businesses burn through their ad budgets without seeing real results. They boost posts, run generic campaigns, and hope for the best. That is not how we do things. Our paid advertising services are built on data, structured around your business goals, and optimized every single day to make sure every dirham you spend works harder than the last. Whether it is Google Ads management, Meta Ads across Facebook and Instagram, or a full-funnel paid media strategy, we build campaigns that bring in qualified leads and drive real revenue for your business.</p>
-        <a href="../contact.html" class="btn btn-primary">Launch Your Campaign <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Launch Your Campaign <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included Section -->
   <section class="section">
@@ -100,44 +137,44 @@
       </div>
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Google Search Ads</h4>
+            <h3>Google Search Ads</h3>
             <p>We put your business in front of people who are actively searching for what you offer. Our Google Ads management covers keyword research, bid strategy, ad copywriting, and ongoing optimization so you show up at the top when it matters most.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Google Display and YouTube Ads</h4>
+            <h3>Google Display and YouTube Ads</h3>
             <p>Reach your ideal audience across millions of websites and YouTube with visually engaging display and video campaigns. We handle creative development, audience targeting, and placement strategy to build brand awareness and drive consideration at scale.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Meta (Facebook and Instagram) Ads</h4>
+            <h3>Meta (Facebook and Instagram) Ads</h3>
             <p>Facebook and Instagram are where your audience spends their time, and our Meta Ads agency expertise helps you meet them there. We create scroll-stopping campaigns with precise audience targeting, compelling creatives, and smart budget allocation that delivers real results.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Retargeting Campaigns</h4>
+            <h3>Retargeting Campaigns</h3>
             <p>Most visitors do not convert on their first visit. Retargeting brings them back with relevant, well-timed ads that keep your brand top of mind. We set up retargeting across both Google and Meta to recapture lost opportunities and turn warm audiences into paying customers.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Ad Creative Development</h4>
+            <h3>Ad Creative Development</h3>
             <p>Great ads need great creative. We design eye-catching visuals, write persuasive ad copy, and develop video concepts that stop people mid-scroll. Every creative is tailored to your audience, your platform, and your campaign objectives.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Conversion Tracking Setup</h4>
+            <h3>Conversion Tracking Setup</h3>
             <p>You cannot improve what you cannot measure. We set up comprehensive conversion tracking across your website, landing pages, and CRM so you know exactly which ads, audiences, and creatives are driving leads and sales. No guesswork, just clear data.</p>
           </div>
         </div>
@@ -146,7 +183,7 @@
   </section>
 
   <!-- Our Process Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -192,23 +229,23 @@
       </div>
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#128181;</div>
-          <h4>Lower Cost Per Acquisition</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="9" cy="7" rx="5.2" ry="3"/><path d="M3.8 7v3.9c0 1.7 2.3 3 5.2 3 .6 0 1.2-.1 1.7-.2"/><ellipse cx="15" cy="13.5" rx="5.2" ry="3"/><path d="M9.8 13.5v3.9c0 1.7 2.3 3 5.2 3s5.2-1.3 5.2-3v-3.9"/></svg></div>
+          <h3>Lower Cost Per Acquisition</h3>
           <p>Smarter targeting, better creatives, and continuous optimization mean you spend less to acquire each new customer. Our PPC management approach focuses relentlessly on reducing wasted spend so more of your budget goes toward driving actual conversions, not vanity impressions.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128200;</div>
-          <h4>Higher Return on Ad Spend</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.2l6-6 4 4 8-8"/><path d="M15.2 7.2H21v5.8"/></svg></div>
+          <h3>Higher Return on Ad Spend</h3>
           <p>Every campaign we run is measured by one thing above all else: return on ad spend. We do not celebrate clicks or impressions. We celebrate revenue. Our clients consistently see ROAS improvements because we treat your budget like our own and optimize for profit, not just traffic.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#127919;</div>
-          <h4>Qualified Traffic, Not Just Traffic</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Qualified Traffic, Not Just Traffic</h3>
           <p>Anybody can drive clicks to your website. The difference is driving the right clicks. Our paid advertising services focus on reaching people who are genuinely interested in what you offer, so you get leads and customers instead of empty visits that go nowhere.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128065;</div>
-          <h4>Full-Funnel Visibility</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.2 12S6 6.2 12 6.2 21.8 12 21.8 12 18 17.8 12 17.8 2.2 12 2.2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Full-Funnel Visibility</h3>
           <p>From the first time someone sees your brand to the moment they become a customer, you will have complete visibility into the entire journey. We build dashboards and reports that show you exactly where your leads come from, what they cost, and how each channel contributes to your bottom line.</p>
         </div>
       </div>
@@ -216,7 +253,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -284,11 +321,49 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/scalp-shop">
+            <div class="case-card-top"><span class="case-num">01</span><span class="case-tag">Meta Ads &middot; El Paso, Texas, USA</span></div>
+            <h3>The Scalp Shop</h3>
+            <p>A US hair and scalp clinic cut cost per lead from $86 to $3.91 across 35 Facebook Ads campaigns, a 95% reduction, with a 94/100 Meta Opportunity Score.</p>
+            <div class="case-chips"><span class="case-chip"><b>$3.91</b> Cost per lead, down from $86</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="case-card" href="../case-studies/nevada-access-solutions">
+            <div class="case-card-top"><span class="case-num">02</span><span class="case-tag">Meta Ads &middot; Nevada, USA</span></div>
+            <h3>Nevada Access Solutions</h3>
+            <p>A full-funnel B2B Facebook Ads campaign produced 64 leads at $5.08 each, 63% below Meta's own benchmark, built on a $100 awareness spend that reached 43,927 people.</p>
+            <div class="case-chips"><span class="case-chip"><b>$5.08</b> Cost per lead</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="case-card" href="../case-studies/roofing-company">
+            <div class="case-card-top"><span class="case-num">05</span><span class="case-tag">Meta Ads &middot; USA</span></div>
+            <h3>US Roofing Company</h3>
+            <p>Facebook Ads for a US roofing company produced 70 leads at $66.60 cost per lead, roughly 40% under the published category benchmark of $115 or more.</p>
+            <div class="case-chips"><span class="case-chip"><b>70</b> Leads generated</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Make Your<br><span class="gradient-text">Ad Budget Work Harder?</span></h2>
       <p class="text-lg">Let's talk about your goals and build a paid media strategy that delivers measurable results. No long contracts, no confusing jargon. Just honest conversations about growing your business.</p>
-      <a href="../contact.html" class="btn btn-primary">Get Your Free Ad Audit <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Get Your Free Ad Audit <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -300,51 +375,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm-sales-pipeline.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-6071">Email address</label>
+              <input type="email" id="sub-email-6071" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

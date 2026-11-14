@@ -6,10 +6,32 @@
   <title>Web Design & Development Services | Digital Picto</title>
   <meta name="description" content="Custom web design and website development services for SMEs. We build fast, conversion-focused websites and landing pages that drive real business results.">
   <meta name="keywords" content="web design services, website development, landing page design, conversion optimization, responsive web design">
-  <link rel="canonical" href="https://digitalpicto.online/services/web-design.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/web-design">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Web Design & Development Services | Digital Picto">
+  <meta property="og:description" content="Custom web design and website development services for SMEs. We build fast, conversion-focused websites and landing pages that drive real business results.">
+  <meta property="og:url" content="https://digitalpicto.online/services/web-design">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Design & Development Services | Digital Picto">
+  <meta name="twitter:description" content="Custom web design and website development services for SMEs. We build fast, conversion-focused websites and landing pages that drive real business results.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -37,23 +59,36 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "Web Design & Development", "item": "https://digitalpicto.online/services/web-design" }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -62,12 +97,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -75,20 +112,20 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>Web Design</span>
         </nav>
         <h1 class="display-xl">Web Design &amp;<br><span class="gradient-text">Development</span></h1>
         <p class="service-desc">Your website is the centre of everything you do online. It is where first impressions happen, where trust gets built, and where visitors decide whether to become customers. The problem? Most SME websites look decent enough but quietly fail at the one thing that matters: turning visitors into leads and sales. Our web design services focus on building websites that do not just sit there looking pretty. They work as genuine growth tools for your business, bringing in traffic, keeping people engaged, and driving real conversions.</p>
-        <a href="../contact.html" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included Section -->
   <section class="section">
@@ -99,44 +136,44 @@
       </div>
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Custom Web Design</h4>
+            <h3>Custom Web Design</h3>
             <p>No cookie-cutter templates here. Every page is designed from scratch to match your brand, speak to your audience, and stand out from competitors. We create layouts that guide visitors naturally toward taking action.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Responsive Website Development</h4>
+            <h3>Responsive Website Development</h3>
             <p>Your site will look and work beautifully on every device, from wide desktop monitors to the smallest phone screens. We hand-code with clean, modern standards so everything loads fast and functions smoothly.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>CMS Integration</h4>
+            <h3>CMS Integration</h3>
             <p>We set up a content management system that actually makes sense. You will be able to update pages, add blog posts, and manage content on your own without needing a developer every time you want to change a sentence.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Speed Optimization</h4>
+            <h3>Speed Optimization</h3>
             <p>Slow websites lose visitors and rankings. We optimize every image, script, and line of code to make sure your site loads in under three seconds. Because nobody waits around for a page that takes forever to appear.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>SEO Foundation</h4>
+            <h3>SEO Foundation</h3>
             <p>Every website we build comes with a solid SEO foundation baked in from the start. Clean URL structures, proper heading hierarchy, meta tags, schema markup, and technical best practices so search engines can find and rank your pages.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Conversion Optimization</h4>
+            <h3>Conversion Optimization</h3>
             <p>A beautiful website that does not convert is just an expensive brochure. We design every element with conversion optimization in mind, from strategic call-to-action placement to landing page design that turns browsers into buyers.</p>
           </div>
         </div>
@@ -145,7 +182,7 @@
   </section>
 
   <!-- Our Process Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -191,23 +228,23 @@
       </div>
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#9889;</div>
-          <h4>Faster Load Times</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.2 3L5.5 14h5.6l-1.3 7 7.7-11h-5.6z"/></svg></div>
+          <h3>Faster Load Times</h3>
           <p>Our websites consistently load in under 3 seconds. That means lower bounce rates, longer sessions, and more chances to convert visitors into paying customers. Speed is not a luxury. It is a ranking factor and a business advantage.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128200;</div>
-          <h4>Higher Conversion Rates</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.2l6-6 4 4 8-8"/><path d="M15.2 7.2H21v5.8"/></svg></div>
+          <h3>Higher Conversion Rates</h3>
           <p>When every page is built with conversion optimization at its core, the results show up in your numbers. Clients typically see a 40 to 60 percent increase in leads after launching their new site. Better landing page design means more enquiries, more sign-ups, and more sales.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128269;</div>
-          <h4>Better Search Rankings</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.8"/><path d="M16 16l5 5"/></svg></div>
+          <h3>Better Search Rankings</h3>
           <p>A technically sound website is the foundation of any successful SEO strategy. With clean code, fast performance, and proper structure baked in from day one, your site is set up to climb search rankings and bring in organic traffic consistently.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128241;</div>
-          <h4>Mobile-First Experience</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="2.4" width="10" height="19.2" rx="2.2"/><path d="M11 18.8h2"/></svg></div>
+          <h3>Mobile-First Experience</h3>
           <p>More than half of your visitors are on their phones. Our responsive website development ensures they get a seamless, fast, and frustration-free experience on any screen size. No pinching, no zooming, no leaving because the site is impossible to use.</p>
         </div>
       </div>
@@ -215,7 +252,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -315,11 +352,42 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/pretty-party-platters">
+            <div class="case-card-top"><span class="case-num">11</span><span class="case-tag">SEO &middot; USA</span></div>
+            <h3>Pretty Party Platters</h3>
+            <p>Ten months of SEO for a US catering business: organic traffic from 670 to 2,800 a month, keywords from 669 to 1,400, and 262 pages now cited across ChatGPT, AI Overviews, AI Mode and Gemini.</p>
+            <div class="case-chips"><span class="case-chip"><b>2.8K</b> Monthly organic visits, from 670</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="case-card" href="../case-studies/us-health-insurance">
+            <div class="case-card-top"><span class="case-num">14</span><span class="case-tag">Google Ads &middot; United States</span></div>
+            <h3>US Health Insurance Provider</h3>
+            <p>A US health insurance lead generation campaign achieved a 9.90% conversion rate and 8.72% click-through rate at $23.50 cost per conversion, in one of the most competitive and regulated categories on Google Ads.</p>
+            <div class="case-chips"><span class="case-chip"><b>9.90%</b> Conversion rate</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready for a Website That<br><span class="gradient-text">Actually Works?</span></h2>
       <p class="text-lg">Let's talk about what your business needs and how we can build it. No pressure, no jargon, just an honest conversation about turning your website into your best salesperson.</p>
-      <a href="../contact.html" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -331,51 +399,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm-sales-pipeline.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-2566">Email address</label>
+              <input type="email" id="sub-email-2566" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

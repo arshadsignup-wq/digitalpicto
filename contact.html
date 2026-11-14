@@ -6,10 +6,32 @@
   <title>Contact Us | Get a Free Growth Audit | Digital Picto</title>
   <meta name="description" content="Get in touch with Digital Picto. Book your free growth audit and start building a structured digital growth system for your business.">
   <meta name="keywords" content="contact digital marketing agency, free growth audit, digital marketing consultation, book marketing consultation">
-  <link rel="canonical" href="https://digitalpicto.online/contact.html">
+  <link rel="canonical" href="https://digitalpicto.online/contact">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Contact Us | Get a Free Growth Audit | Digital Picto">
+  <meta property="og:description" content="Get in touch with Digital Picto. Book your free growth audit and start building a structured digital growth system for your business.">
+  <meta property="og:url" content="https://digitalpicto.online/contact">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us | Get a Free Growth Audit | Digital Picto">
+  <meta name="twitter:description" content="Get in touch with Digital Picto. Book your free growth audit and start building a structured digital growth system for your business.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
@@ -23,21 +45,23 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="services">Services</a>
+        <a href="case-studies">Case Studies</a>
+        <a href="virtual-assistants">Virtual Assistants</a>
+        <a href="about">About</a>
+        <a href="blog">Blog</a>
+        <a href="contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -46,12 +70,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="services">Services</a>
+    <a href="case-studies">Case Studies</a>
+    <a href="virtual-assistants">Virtual Assistants</a>
+    <a href="about">About</a>
+    <a href="blog">Blog</a>
+    <a href="contact">Contact</a>
+    <a href="contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Page Header -->
@@ -63,16 +89,19 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- Contact Section -->
   <section class="section" style="padding-top:0;">
     <div class="container">
+      <h2 class="display-lg" style="margin-bottom:40px;">Send Us a Message</h2>
       <div class="contact-grid">
 
         <!-- Form -->
         <div class="reveal-left">
           <form id="contact-form" class="contact-form" action="https://formspree.io/f/xlgwwygk" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New enquiry from digitalpicto.online">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
             <div class="form-group">
               <label for="name">Your Name *</label>
               <input type="text" id="name" name="name" placeholder="John Smith" required autocomplete="name">
@@ -123,7 +152,7 @@
           </form>
 
           <div class="form-success">
-            <div class="check">&#10003;</div>
+            <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
             <h3 class="display-md" style="margin-bottom:12px;">Message Sent!</h3>
             <p class="text-md text-secondary">Thanks for reaching out. We will review your details and get back to you within 24 hours with next steps.</p>
           </div>
@@ -132,10 +161,10 @@
         <!-- Contact Info -->
         <div class="contact-info reveal-right">
           <div class="contact-info-item">
-            <div class="info-icon">&#9993;</div>
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.2 10.2L12 4.2l8.8 6v8.6a2 2 0 0 1-2 2H5.2a2 2 0 0 1-2-2z"/><path d="M3.2 10.2L12 16.2l8.8-6"/></svg></div>
             <div>
-              <h4>Email</h4>
-              <p><a href="mailto:Digitalpicto832@gmail.com" style="color:var(--text-secondary);">Digitalpicto832@gmail.com</a></p>
+              <h3>Email</h3>
+              <p><a class="inline-link" href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a></p>
             </div>
           </div>
 
@@ -147,7 +176,7 @@
             <div class="next-step">
               <div class="step-num">1</div>
               <div>
-                <h4>Discovery Call</h4>
+                <h3>Discovery Call</h3>
                 <p>We will schedule a free 30-minute audit call to understand your business, goals, and current digital setup.</p>
               </div>
             </div>
@@ -155,7 +184,7 @@
             <div class="next-step">
               <div class="step-num">2</div>
               <div>
-                <h4>Custom Proposal</h4>
+                <h3>Custom Proposal</h3>
                 <p>Based on the audit, we will build a tailored growth roadmap with clear deliverables, timeline, and pricing.</p>
               </div>
             </div>
@@ -163,7 +192,7 @@
             <div class="next-step">
               <div class="step-num">3</div>
               <div>
-                <h4>Kick-Off</h4>
+                <h3>Kick-Off</h3>
                 <p>Once approved, we hit the ground running with onboarding, setup, and launch within the first two weeks.</p>
               </div>
             </div>
@@ -182,51 +211,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="services">Services</a>
+          <a href="case-studies">Case Studies</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
+          <a href="about">About</a>
+          <a href="blog">Blog</a>
+          <a href="contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="services/web-design.html">Web Design</a>
-          <a href="services/seo.html">SEO</a>
-          <a href="services/paid-advertising.html">Paid Ads</a>
-          <a href="services/social-media.html">Social Media</a>
-          <a href="services/email-automation.html">Email Marketing</a>
-          <a href="services/branding.html">Branding</a>
-          <a href="services/automations-workflow.html">Automations</a>
-          <a href="services/voice-ai.html">Voice AI</a>
-          <a href="services/conversational-ai.html">Conversational AI</a>
-          <a href="services/crm-sales-pipeline.html">CRM</a>
-          <a href="services/integrations.html">Integrations</a>
-          <a href="services/go-high-level.html">Go High Level</a>
-          <a href="services/virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="services/web-design">Web Design</a>
+          <a href="services/seo">SEO</a>
+          <a href="services/paid-advertising">Paid Ads</a>
+          <a href="services/social-media">Social Media</a>
+          <a href="services/email-automation">Email Marketing</a>
+          <a href="services/branding">Branding</a>
+          <a href="services/automations-workflow">Automations</a>
+          <a href="services/voice-ai">Voice AI</a>
+          <a href="services/conversational-ai">Conversational AI</a>
+          <a href="services/crm-sales-pipeline">CRM</a>
+          <a href="services/integrations">Integrations</a>
+          <a href="services/go-high-level">Go High Level</a>
+          <a href="services/virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-1019">Email address</label>
+              <input type="email" id="sub-email-1019" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/analytics.js" defer></script>
 </body>
 </html>

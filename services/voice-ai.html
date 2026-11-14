@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voice AI Services | AI Phone Answering System for Business | Digital Picto</title>
-  <meta name="description" content="AI-powered voice solutions for businesses. Automated phone answering, intelligent call routing, and voice assistants that handle customer calls 24/7. Get more done with less effort.">
+  <title>Voice AI Services | AI Phone Answering System for Business</title>
+  <meta name="description" content="AI-powered voice solutions for businesses. Automated phone answering, intelligent call routing, and voice assistants that handle customer calls 24/7.">
   <meta name="keywords" content="voice ai, ai voice, ai phone answering system, ai phone agent, text to voice ai, voice ai for business">
-  <link rel="canonical" href="https://digitalpicto.online/services/voice-ai.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/voice-ai">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Voice AI Services | AI Phone Answering System for Business">
+  <meta property="og:description" content="AI-powered voice solutions for businesses. Automated phone answering, intelligent call routing, and voice assistants that handle customer calls 24/7.">
+  <meta property="og:url" content="https://digitalpicto.online/services/voice-ai">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Voice AI Services | AI Phone Answering System for Business">
+  <meta name="twitter:description" content="AI-powered voice solutions for businesses. Automated phone answering, intelligent call routing, and voice assistants that handle customer calls 24/7.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -113,24 +135,37 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "Voice AI", "item": "https://digitalpicto.online/services/voice-ai" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -139,12 +174,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -152,23 +189,23 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>Voice AI</span>
         </nav>
         <h1 class="display-xl">Voice <span class="gradient-text">AI</span></h1>
         <p class="service-desc text-lg">Most businesses lose customers the moment a phone call goes unanswered. Missed calls mean missed revenue, and hiring staff to cover every hour of the day is not realistic for most companies. Our voice AI solutions change that completely. We build AI-powered phone answering systems that handle customer calls around the clock, route callers to the right place, schedule appointments, take messages, and answer common questions with a natural-sounding voice. Your customers get instant, professional service every time they call, and you never miss another opportunity.</p>
-        <a href="../contact.html" class="btn btn-primary">Get Your Free Voice AI Consultation <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Get Your Free Voice AI Consultation <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </section>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included -->
-  <section class="section">
+  <section class="section section--tint">
     <div class="container">
       <div class="section-header reveal">
         <span class="label">What's Included</span>
@@ -178,49 +215,49 @@
 
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>AI Phone Answering System</h4>
+            <h3>AI Phone Answering System</h3>
             <p>A fully automated phone answering system that picks up every call instantly, greets callers professionally, and handles conversations using natural language processing. No more voicemails, no more missed calls, and no more frustrated customers waiting on hold.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Intelligent Call Routing</h4>
+            <h3>Intelligent Call Routing</h3>
             <p>The AI listens to what callers need and routes them to the right department or team member automatically. No clunky phone menus or button pressing required. Callers simply describe what they need, and the system connects them in seconds.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Voice AI Assistants</h4>
+            <h3>Voice AI Assistants</h3>
             <p>Custom-built voice assistants that answer frequently asked questions, provide business information, and walk callers through common processes. They sound natural, respond intelligently, and handle multiple calls at the same time without breaking a sweat.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Appointment Scheduling by Voice</h4>
+            <h3>Appointment Scheduling by Voice</h3>
             <p>Callers can book, reschedule, or cancel appointments directly over the phone. The AI checks your live calendar, confirms availability, and sends confirmation messages to both you and the customer without any manual work on your end.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Call Analytics and Reporting</h4>
+            <h3>Call Analytics and Reporting</h3>
             <p>Get detailed insights into every call your business receives. See call volumes, peak hours, common questions, resolution rates, and caller sentiment. Use this data to improve your service and spot trends before they become problems.</p>
           </div>
         </div>
 
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Custom Voice Scripts</h4>
+            <h3>Custom Voice Scripts</h3>
             <p>We write and program custom conversation scripts tailored to your business, your brand voice, and your most common caller scenarios. Every word is carefully crafted to sound professional, friendly, and on-brand so callers feel like they are speaking with your team.</p>
           </div>
         </div>
@@ -229,7 +266,7 @@
   </section>
 
   <!-- Our Process -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -282,26 +319,26 @@
 
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#128222;</div>
-          <h4>24/7 Call Handling</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3.2h3l2 5-2.4 1.5a12.3 12.3 0 0 0 5.7 5.7L15.8 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4 5.4 2 2 0 0 1 6 3.2z"/></svg></div>
+          <h3>24/7 Call Handling</h3>
           <p>Your business never misses a call again, whether it is 2 PM or 2 AM. Every customer gets an instant, professional response no matter when they pick up the phone. That means more leads captured, more appointments booked, and a reputation for always being available.</p>
         </div>
 
         <div class="result-card">
-          <div class="result-icon">&#128200;</div>
-          <h4>Reduced Missed Calls</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.2l6-6 4 4 8-8"/><path d="M15.2 7.2H21v5.8"/></svg></div>
+          <h3>Reduced Missed Calls</h3>
           <p>Missed calls are missed money. With AI answering every single call instantly, your capture rate goes through the roof. Businesses using voice AI typically see missed calls drop by over 90 percent, turning previously lost opportunities into real revenue.</p>
         </div>
 
         <div class="result-card">
-          <div class="result-icon">&#128176;</div>
-          <h4>Lower Staffing Costs</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="9" cy="7" rx="5.2" ry="3"/><path d="M3.8 7v3.9c0 1.7 2.3 3 5.2 3 .6 0 1.2-.1 1.7-.2"/><ellipse cx="15" cy="13.5" rx="5.2" ry="3"/><path d="M9.8 13.5v3.9c0 1.7 2.3 3 5.2 3s5.2-1.3 5.2-3v-3.9"/></svg></div>
+          <h3>Lower Staffing Costs</h3>
           <p>Hiring receptionists and call center agents is expensive. Voice AI handles the bulk of routine calls at a fraction of the cost, freeing up your team to focus on high-value work that actually requires a human touch. The savings add up quickly.</p>
         </div>
 
         <div class="result-card">
-          <div class="result-icon">&#11088;</div>
-          <h4>Better Customer Experience</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M8.4 14.2a4.6 4.6 0 0 0 7.2 0"/><path d="M9.2 9.6h.01M14.8 9.6h.01"/></svg></div>
+          <h3>Better Customer Experience</h3>
           <p>No more hold music, no more phone tag, no more transfers to the wrong department. Callers get fast, accurate answers and seamless service every time. Happier customers mean better reviews, more referrals, and stronger long-term loyalty.</p>
         </div>
       </div>
@@ -309,7 +346,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -417,11 +454,35 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/us-health-insurance">
+            <div class="case-card-top"><span class="case-num">14</span><span class="case-tag">Google Ads &middot; United States</span></div>
+            <h3>US Health Insurance Provider</h3>
+            <p>A US health insurance lead generation campaign achieved a 9.90% conversion rate and 8.72% click-through rate at $23.50 cost per conversion, in one of the most competitive and regulated categories on Google Ads.</p>
+            <div class="case-chips"><span class="case-chip"><b>9.90%</b> Conversion rate</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Never Miss<br><span class="gradient-text">Another Call?</span></h2>
       <p class="text-lg">Book a free consultation and we will walk you through exactly how voice AI can work for your business. We will assess your call volume, map out the ideal setup, and show you what it looks like to have every phone call handled professionally, around the clock.</p>
-      <a href="../contact.html" class="btn btn-primary">Book Your Free Consultation <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Book Your Free Consultation <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -433,51 +494,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-5857">Email address</label>
+              <input type="email" id="sub-email-5857" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

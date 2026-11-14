@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Source material and internal working documents.
+# This repository is PUBLIC and deploys to digitalpicto.online, so anything
+# committed here is readable by anyone. These stay on local disk only.
+Case Study/
+Founder/
+Meeting Video with Client/
+Digitalpicto_Complete_Claude_Handoff.md
+docs/

@@ -4,12 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Third-Party Integrations & Plugins | Digital Picto</title>
-  <meta name="description" content="Connect your business tools with custom third-party integrations and plugin development. We integrate CRMs, payment gateways, APIs, and marketing platforms seamlessly.">
+  <meta name="description" content="Connect your business tools with custom third-party integrations and plugin development. We integrate CRMs, payment gateways, APIs, and marketing platforms.">
   <meta name="keywords" content="third party integrations, api integration services, plugin development, software integration, crm integration, zapier integration, gohighlevel integrations">
-  <link rel="canonical" href="https://digitalpicto.online/services/integrations.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/integrations">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Third-Party Integrations & Plugins | Digital Picto">
+  <meta property="og:description" content="Connect your business tools with custom third-party integrations and plugin development. We integrate CRMs, payment gateways, APIs, and marketing platforms.">
+  <meta property="og:url" content="https://digitalpicto.online/services/integrations">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Third-Party Integrations & Plugins | Digital Picto">
+  <meta name="twitter:description" content="Connect your business tools with custom third-party integrations and plugin development. We integrate CRMs, payment gateways, APIs, and marketing platforms.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -93,23 +115,36 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "Integrations & Plugins", "item": "https://digitalpicto.online/services/integrations" }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -118,12 +153,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -131,20 +168,20 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>Integrations</span>
         </nav>
         <h1 class="display-xl">Third-Party Integrations<br><span class="gradient-text">&amp; Plugins</span></h1>
         <p class="service-desc">Most businesses today rely on dozens of different tools to manage their operations, and the problem is that those tools rarely talk to each other. Customer data gets trapped in your CRM while your email platform runs off a completely separate list. Payment information lives in one system while your accounting software waits for someone to manually enter the same numbers. Teams end up wasting hours every week copying data between platforms, and important details slip through the cracks along the way. We solve this by building custom integrations that connect your tools so information flows automatically between them. The result is a single source of truth across your entire tech stack, less manual work for your team, and fewer costly mistakes caused by disconnected systems.</p>
-        <a href="../contact.html" class="btn btn-primary">Connect Your Tools <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Connect Your Tools <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included Section -->
   <section class="section">
@@ -155,44 +192,44 @@
       </div>
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>API Integration Development</h4>
+            <h3>API Integration Development</h3>
             <p>We build custom API connections between your platforms and tools so data moves automatically without anyone lifting a finger. Whether it is syncing contacts between your CRM and email platform or pushing order data into your accounting software, we create reliable, well-documented integrations that keep everything in sync around the clock.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>CRM &amp; Marketing Platform Sync</h4>
+            <h3>CRM &amp; Marketing Platform Sync</h3>
             <p>Your CRM should be the central hub for all customer data, and we make sure it stays that way. We connect your CRM with your email marketing tools, ad platforms, analytics dashboards, and any other marketing software so leads, contacts, and campaign data flow between systems without manual imports or exports.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Payment Gateway Integration</h4>
+            <h3>Payment Gateway Integration</h3>
             <p>We set up seamless connections with payment processors like Stripe, PayPal, and regional payment gateways so transactions flow directly into your invoicing, accounting, and CRM systems. No more reconciling payments manually or chasing missing transaction records across multiple platforms.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Zapier &amp; Make Automation</h4>
+            <h3>Zapier &amp; Make Automation</h3>
             <p>Not every integration needs custom code. We set up automated workflows using Zapier and Make that connect over 5,000 apps without writing a single line of code. These are perfect for straightforward data transfers, notifications, and simple triggers that keep your day-to-day operations running smoothly.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Custom Plugin Development</h4>
+            <h3>Custom Plugin Development</h3>
             <p>When off-the-shelf plugins do not cut it, we build custom ones. We develop lightweight, purpose-built plugins and extensions for WordPress, Shopify, and other platforms that add exactly the functionality you need without the bloat that comes with generic solutions. Every plugin is coded to platform standards and tested thoroughly before deployment.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Data Migration &amp; Syncing</h4>
+            <h3>Data Migration &amp; Syncing</h3>
             <p>Switching platforms or consolidating tools should not mean losing data. We handle clean data migration between systems, mapping fields accurately and validating everything before and after the move. We also set up real-time or scheduled syncing so your data stays consistent across every platform going forward.</p>
           </div>
         </div>
@@ -201,7 +238,7 @@
   </section>
 
   <!-- Our Process Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -247,23 +284,23 @@
       </div>
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#128279;</div>
-          <h4>Connected Systems</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.2 13.2a4.8 4.8 0 0 0 6.8 0l2-2a4.8 4.8 0 0 0-6.8-6.8l-1 1"/><path d="M13.8 10.8a4.8 4.8 0 0 0-6.8 0l-2 2a4.8 4.8 0 0 0 6.8 6.8l1-1"/></svg></div>
+          <h3>Connected Systems</h3>
           <p>All your tools talking to each other and sharing data automatically. No more isolated platforms holding onto information that the rest of your business needs. Every system stays in sync so your team always has access to the latest, most accurate data no matter which tool they are working in.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#9201;</div>
-          <h4>Hours Saved Weekly</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.4 2"/></svg></div>
+          <h3>Hours Saved Weekly</h3>
           <p>Eliminate the manual data entry and copy-paste workflows that eat up your team's time every single day. When integrations handle the data transfer automatically, your people get hours back every week to focus on meaningful work that actually moves the business forward instead of shuffling information between screens.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128202;</div>
-          <h4>Single Source of Truth</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 20.4h18"/><path d="M6.2 20.4v-7.6M12 20.4V5.2M17.8 20.4v-5.4"/></svg></div>
+          <h3>Single Source of Truth</h3>
           <p>Consistent, reliable data across every platform your team uses. When customer records, transaction history, and campaign data are synced in real time, you can trust the numbers you see in any system. No more conflicting reports or outdated information causing confusion and bad decisions.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#9889;</div>
-          <h4>Faster Operations</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.2 3L5.5 14h5.6l-1.3 7 7.7-11h-5.6z"/></svg></div>
+          <h3>Faster Operations</h3>
           <p>Automated data flows mean faster response times and fewer bottlenecks across your entire operation. Leads get routed instantly, orders trigger fulfilment automatically, and reports update in real time. Your business moves faster because the data does, and that speed gives you an edge over competitors still doing things manually.</p>
         </div>
       </div>
@@ -271,7 +308,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -371,11 +408,35 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/sauna-ecommerce">
+            <div class="case-card-top"><span class="case-num">15</span><span class="case-tag">Google Ads &middot; USA</span></div>
+            <h3>Sauna Retailer</h3>
+            <p>A full Google Ads restructure for a sauna retailer increased ROI by 87% and cut cost per click by 25%, producing 2,416 conversions and $214,630.52 in tracked conversion value.</p>
+            <div class="case-chips"><span class="case-chip"><b>2,416</b> Conversions</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Connect Your<br><span class="gradient-text">Business Tools?</span></h2>
       <p class="text-lg">Let's talk about what tools you are using and where the gaps are. We will show you exactly how integrations can save your team time and keep your data flowing smoothly across every platform.</p>
-      <a href="../contact.html" class="btn btn-primary">Connect Your Tools <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Connect Your Tools <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -387,51 +448,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm-sales-pipeline.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-2745">Email address</label>
+              <input type="email" id="sub-email-2745" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

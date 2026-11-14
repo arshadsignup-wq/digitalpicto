@@ -4,12 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automations & Workflow Services | Digital Picto</title>
-  <meta name="description" content="Business automation and workflow automation services for SMEs. We build custom automated workflows, marketing automation, and process automation that save time and reduce manual work.">
+  <meta name="description" content="Business automation and workflow automation services for SMEs. We build custom automated workflows, marketing automation, and process automation that save time.">
   <meta name="keywords" content="business automation, workflow automation, marketing automation, process automation, GoHighLevel automation, automated workflows">
-  <link rel="canonical" href="https://digitalpicto.online/services/automations-workflow.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/automations-workflow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Automations & Workflow Services | Digital Picto">
+  <meta property="og:description" content="Business automation and workflow automation services for SMEs. We build custom automated workflows, marketing automation, and process automation that save time.">
+  <meta property="og:url" content="https://digitalpicto.online/services/automations-workflow">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Automations & Workflow Services | Digital Picto">
+  <meta name="twitter:description" content="Business automation and workflow automation services for SMEs. We build custom automated workflows, marketing automation, and process automation that save time.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -93,23 +115,36 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "Automations & Workflow", "item": "https://digitalpicto.online/services/automations-workflow" }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -118,12 +153,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -131,20 +168,20 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>Automations &amp; Workflow</span>
         </nav>
         <h1 class="display-xl">Automations &amp;<br><span class="gradient-text">Workflow</span></h1>
         <p class="service-desc">Every growing business hits the same wall. There are only so many hours in the day, and too many of them get eaten up by repetitive tasks that do not actually need a human. Lead follow-ups, data entry, appointment reminders, internal notifications, all of it piles up and slows your team down. Our automation and workflow services are built to take that weight off your shoulders. We design and implement custom automated workflows that handle the repetitive work so your team can focus on what they do best: closing deals, serving clients, and growing the business. Whether you need marketing automation, lead routing, or full process automation across departments, we build systems that run quietly in the background and keep everything moving without constant manual input.</p>
-        <a href="../contact.html" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included Section -->
   <section class="section">
@@ -155,44 +192,44 @@
       </div>
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Workflow Design &amp; Mapping</h4>
+            <h3>Workflow Design &amp; Mapping</h3>
             <p>Before we automate anything, we map out your entire workflow from start to finish. We identify every manual step, every handoff, and every bottleneck so we know exactly where automation will have the biggest impact on your daily operations.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Marketing Automation</h4>
+            <h3>Marketing Automation</h3>
             <p>From email sequences and SMS follow-ups to lead scoring and nurture campaigns, we build marketing automation that keeps your pipeline warm without your team lifting a finger. Every touchpoint is timed and personalised to move prospects closer to a decision.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Lead Routing &amp; Assignment</h4>
+            <h3>Lead Routing &amp; Assignment</h3>
             <p>New leads get automatically assigned to the right team member based on rules you set, whether that is location, service interest, deal size, or simple round-robin distribution. No more leads sitting in a shared inbox waiting for someone to claim them.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Task Automation</h4>
+            <h3>Task Automation</h3>
             <p>Repetitive internal tasks like creating follow-up reminders, updating records, generating reports, and moving deals through pipeline stages can all be handled automatically. Your team gets more done in less time without the mental drain of busywork.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Notification &amp; Alert Systems</h4>
+            <h3>Notification &amp; Alert Systems</h3>
             <p>Stay on top of everything without checking every tool constantly. We set up smart alerts that notify you and your team when a high-value lead comes in, when a task is overdue, when a deal stalls, or when any critical event needs attention right away.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Custom Integrations</h4>
+            <h3>Custom Integrations</h3>
             <p>Your tools should talk to each other. We connect your CRM, email platform, calendar, project management tools, and any other software through native integrations or custom API connections so data flows automatically between everything you use.</p>
           </div>
         </div>
@@ -201,7 +238,7 @@
   </section>
 
   <!-- Our Process Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -247,23 +284,23 @@
       </div>
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#9203;</div>
-          <h4>Time Savings</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.4 2"/></svg></div>
+          <h3>Time Savings</h3>
           <p>Most businesses we work with save 10 to 20 hours per week once their automations are in place. That is time your team gets back to spend on high-value work like closing deals, building relationships, and growing revenue instead of copying data between spreadsheets.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#9989;</div>
-          <h4>Fewer Errors</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M8.2 12.4l2.6 2.6 5-5.2"/></svg></div>
+          <h3>Fewer Errors</h3>
           <p>Manual processes are prone to human mistakes, especially when people are busy or rushing. Automated workflows follow the same steps perfectly every single time. No missed follow-ups, no data entry typos, no forgotten tasks slipping through the cracks.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#9889;</div>
-          <h4>Faster Response Times</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.2 3L5.5 14h5.6l-1.3 7 7.7-11h-5.6z"/></svg></div>
+          <h3>Faster Response Times</h3>
           <p>When a new lead comes in, every minute counts. Automated lead routing and instant follow-up messages mean your prospects hear from you in seconds, not hours. That kind of speed makes a real difference in competitive markets where the first response often wins the deal.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128200;</div>
-          <h4>Scalable Operations</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.2l6-6 4 4 8-8"/><path d="M15.2 7.2H21v5.8"/></svg></div>
+          <h3>Scalable Operations</h3>
           <p>The beauty of automation is that it scales with you. Whether you are handling 50 leads a month or 5,000, the system runs the same way. You can grow your business without proportionally growing your overhead, and that is how smart companies stay profitable as they expand.</p>
         </div>
       </div>
@@ -271,7 +308,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -371,11 +408,42 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/process-server">
+            <div class="case-card-top"><span class="case-num">16</span><span class="case-tag">Google Ads &middot; USA</span></div>
+            <h3>Process Server</h3>
+            <p>A stalled Google Ads account for a US process server was rebuilt from a campaign error and not-spending state into 142 leads, with ROI up 31% and cost per click down 17%.</p>
+            <div class="case-chips"><span class="case-chip"><b>142</b> Leads generated</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="case-card" href="../case-studies/sauna-ecommerce">
+            <div class="case-card-top"><span class="case-num">15</span><span class="case-tag">Google Ads &middot; USA</span></div>
+            <h3>Sauna Retailer</h3>
+            <p>A full Google Ads restructure for a sauna retailer increased ROI by 87% and cut cost per click by 25%, producing 2,416 conversions and $214,630.52 in tracked conversion value.</p>
+            <div class="case-chips"><span class="case-chip"><b>2,416</b> Conversions</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Automate Your<br><span class="gradient-text">Business Operations?</span></h2>
       <p class="text-lg">Let's talk about which workflows are costing you the most time and how we can automate them. No pressure, no jargon, just a straightforward conversation about making your business run smoother.</p>
-      <a href="../contact.html" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -387,51 +455,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-2013">Email address</label>
+              <input type="email" id="sub-email-2013" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

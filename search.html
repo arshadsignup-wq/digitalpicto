@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search | Digital Picto</title>
+  <meta name="description" content="Search Digital Picto's services, portfolio, virtual assistant offering and 32 articles on growth, automation and AI.">
+  <meta name="keywords" content="search digital picto, find services">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://digitalpicto.online/search">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:title" content="Search | Digital Picto">
+  <meta property="og:url" content="https://digitalpicto.online/search">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="canvas-bg"></canvas>
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="services">Services</a>
+        <a href="case-studies">Case Studies</a>
+        <a href="virtual-assistants">Virtual Assistants</a>
+        <a href="about">About</a>
+        <a href="blog">Blog</a>
+        <a href="contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="services">Services</a>
+    <a href="case-studies">Case Studies</a>
+    <a href="virtual-assistants">Virtual Assistants</a>
+    <a href="about">About</a>
+    <a href="blog">Blog</a>
+    <a href="contact">Contact</a>
+    <a href="contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
+  </div>
+
+  <main id="main">
+  <header class="page-header">
+    <div class="container">
+      <span class="label" style="display:inline-flex;justify-content:center;">Search</span>
+      <h1 class="display-xl">Find what you're<br><span class="gradient-text">looking for.</span></h1>
+      <form class="search-form" role="search" id="search-form">
+        <label class="visually-hidden" for="q">Search the site</label>
+        <input type="search" id="q" name="q" placeholder="Try &ldquo;GoHighLevel&rdquo;, &ldquo;local SEO&rdquo; or &ldquo;virtual assistant&rdquo;"
+               autocomplete="off" autofocus>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <p class="search-meta" id="search-meta" aria-live="polite">Searching 54 pages across services, work, virtual assistants and the blog.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <h2 class="visually-hidden">Search results</h2>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
+          </div>
+          <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
+          <div class="footer-social">
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="services">Services</a>
+          <a href="case-studies">Case Studies</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
+          <a href="about">About</a>
+          <a href="blog">Blog</a>
+          <a href="contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="services/web-design">Web Design</a>
+          <a href="services/seo">SEO</a>
+          <a href="services/paid-advertising">Paid Ads</a>
+          <a href="services/social-media">Social Media</a>
+          <a href="services/email-automation">Email Marketing</a>
+          <a href="services/branding">Branding</a>
+          <a href="services/automations-workflow">Automations</a>
+          <a href="services/voice-ai">Voice AI</a>
+          <a href="services/conversational-ai">Conversational AI</a>
+          <a href="services/crm-sales-pipeline">CRM</a>
+          <a href="services/integrations">Integrations</a>
+          <a href="services/go-high-level">Go High Level</a>
+          <a href="services/virtual-assistants">Virtual Assistants</a>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-3690">Email address</label>
+              <input type="email" id="sub-email-3690" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="terms">Terms of Service</a></span>
+        <span>Engineered for growth.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+</html>

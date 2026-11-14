@@ -6,10 +6,32 @@
   <title>CRM & Sales Pipeline Management | Digital Picto</title>
   <meta name="description" content="CRM setup, sales pipeline management, and lead generation services for SMEs. We build systems that track, nurture, and convert your leads into paying customers.">
   <meta name="keywords" content="crm setup, sales pipeline management, lead generation services, lead generation system, crm integration, lead tracking, sales funnel optimization">
-  <link rel="canonical" href="https://digitalpicto.online/services/crm-sales-pipeline.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/crm-sales-pipeline">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="CRM & Sales Pipeline Management | Digital Picto">
+  <meta property="og:description" content="CRM setup, sales pipeline management, and lead generation services for SMEs. We build systems that track, nurture, and convert your leads into paying customers.">
+  <meta property="og:url" content="https://digitalpicto.online/services/crm-sales-pipeline">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CRM & Sales Pipeline Management | Digital Picto">
+  <meta name="twitter:description" content="CRM setup, sales pipeline management, and lead generation services for SMEs. We build systems that track, nurture, and convert your leads into paying customers.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -93,23 +115,36 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "CRM & Sales Pipeline", "item": "https://digitalpicto.online/services/crm-sales-pipeline" }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -118,12 +153,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -131,20 +168,20 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>CRM &amp; Sales Pipeline</span>
         </nav>
         <h1 class="display-xl">CRM &amp; Sales<br><span class="gradient-text">Pipeline Management</span></h1>
         <p class="service-desc">Most SMEs lose leads every single day, not because they lack interest from potential customers, but because they have no system to track and manage those leads. Enquiries come in through the website, social media, phone calls, and referrals, and they end up scattered across inboxes and forgotten spreadsheets. A properly set up CRM and sales pipeline changes that completely. It gives you full visibility into every lead, where they are in the buying journey, and exactly what needs to happen next to move them closer to a sale. We do not just set up software and hand you a login. We build a complete lead management system tailored to how your business actually sells, so your team always knows who to call, when to follow up, and which deals are most likely to close.</p>
-        <a href="../contact.html" class="btn btn-primary">Build Your Pipeline <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Build Your Pipeline <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included Section -->
   <section class="section">
@@ -155,44 +192,44 @@
       </div>
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>CRM Setup &amp; Configuration</h4>
+            <h3>CRM Setup &amp; Configuration</h3>
             <p>We handle the full setup of your CRM platform, customized to match your sales process from the ground up. That means configuring deal stages, custom fields, user permissions, and notification rules so the system works the way your business works. No generic templates. Everything is built around how your team actually sells and manages relationships.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Sales Pipeline Design</h4>
+            <h3>Sales Pipeline Design</h3>
             <p>We design visual pipeline stages that reflect how your business actually moves deals from first contact to closed. Every stage is clearly defined with specific actions and criteria so your team knows exactly what needs to happen before a deal moves forward. The result is a clean, structured sales process that eliminates guesswork and keeps everyone aligned.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Lead Scoring &amp; Qualification</h4>
+            <h3>Lead Scoring &amp; Qualification</h3>
             <p>Not all leads deserve the same amount of attention. We set up automated lead scoring models that rank each contact based on their behaviour, engagement, and fit with your ideal customer profile. Your sales team spends their time on the leads most likely to buy, instead of chasing every enquiry equally and burning out on dead ends.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Contact Management</h4>
+            <h3>Contact Management</h3>
             <p>A CRM is only as good as the data inside it. We build a clean, organized contact database with smart tags, segments, and full activity tracking so you can see every interaction a lead has had with your business. No more duplicates, no more missing information. Just a reliable, searchable system that gives you the full picture on every contact.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Automated Follow-Ups</h4>
+            <h3>Automated Follow-Ups</h3>
             <p>The fastest way to lose a lead is to forget to follow up. We build timed email and SMS follow-up sequences that trigger automatically based on pipeline activity, so no lead ever goes cold because someone on your team got busy. These sequences keep the conversation going and nudge prospects toward a decision without your team having to lift a finger.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Reporting &amp; Dashboards</h4>
+            <h3>Reporting &amp; Dashboards</h3>
             <p>You cannot improve what you cannot see. We set up real-time dashboards that give you instant visibility into pipeline health, conversion rates at every stage, team performance, and revenue forecasts. These are not vanity metrics. They are the numbers that help you make smarter decisions about where to focus your time, budget, and energy.</p>
           </div>
         </div>
@@ -201,7 +238,7 @@
   </section>
 
   <!-- Our Process Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -247,23 +284,23 @@
       </div>
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#128202;</div>
-          <h4>Full Pipeline Visibility</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 20.4h18"/><path d="M6.2 20.4v-7.6M12 20.4V5.2M17.8 20.4v-5.4"/></svg></div>
+          <h3>Full Pipeline Visibility</h3>
           <p>See every deal, every stage, and every next step at a glance. No more guessing how many active leads you have or wondering where a deal stands. Your entire sales process becomes transparent, giving you and your team the confidence to make fast, informed decisions about where to focus your efforts.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#9889;</div>
-          <h4>Faster Lead Response</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.2 3L5.5 14h5.6l-1.3 7 7.7-11h-5.6z"/></svg></div>
+          <h3>Faster Lead Response</h3>
           <p>Speed wins deals. With automated notifications, instant lead assignments, and triggered follow-up sequences, no lead ever waits around wondering if you got their enquiry. Your response time drops from hours or days to minutes, which dramatically increases the chances of turning that lead into a real conversation.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128200;</div>
-          <h4>Higher Close Rates</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.2l6-6 4 4 8-8"/><path d="M15.2 7.2H21v5.8"/></svg></div>
+          <h3>Higher Close Rates</h3>
           <p>A structured pipeline with clear stages, lead scoring, and timely follow-ups means your team is working smarter, not harder. They spend their time on qualified leads, follow a proven process, and never forget a next step. The result is more deals closed and a measurable improvement in your conversion numbers.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128176;</div>
-          <h4>Predictable Revenue</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="9" cy="7" rx="5.2" ry="3"/><path d="M3.8 7v3.9c0 1.7 2.3 3 5.2 3 .6 0 1.2-.1 1.7-.2"/><ellipse cx="15" cy="13.5" rx="5.2" ry="3"/><path d="M9.8 13.5v3.9c0 1.7 2.3 3 5.2 3s5.2-1.3 5.2-3v-3.9"/></svg></div>
+          <h3>Predictable Revenue</h3>
           <p>When your pipeline is organized and your data is clean, forecasting stops being a guessing game. You can see exactly how much revenue is sitting at each stage, what your average close rate looks like, and what is likely to land this month or next. That kind of predictability changes how you plan, hire, and invest in growth.</p>
         </div>
       </div>
@@ -271,7 +308,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -355,11 +392,42 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/sauna-ecommerce">
+            <div class="case-card-top"><span class="case-num">15</span><span class="case-tag">Google Ads &middot; USA</span></div>
+            <h3>Sauna Retailer</h3>
+            <p>A full Google Ads restructure for a sauna retailer increased ROI by 87% and cut cost per click by 25%, producing 2,416 conversions and $214,630.52 in tracked conversion value.</p>
+            <div class="case-chips"><span class="case-chip"><b>2,416</b> Conversions</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+          <a class="case-card" href="../case-studies/process-server">
+            <div class="case-card-top"><span class="case-num">16</span><span class="case-tag">Google Ads &middot; USA</span></div>
+            <h3>Process Server</h3>
+            <p>A stalled Google Ads account for a US process server was rebuilt from a campaign error and not-spending state into 142 leads, with ROI up 31% and cost per click down 17%.</p>
+            <div class="case-chips"><span class="case-chip"><b>142</b> Leads generated</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Build a Pipeline That<br><span class="gradient-text">Actually Closes Deals?</span></h2>
       <p class="text-lg">Let's talk about your sales process and how a properly built CRM and pipeline can turn your leads into predictable revenue. No jargon, no pressure. Just an honest conversation about what your business needs to stop losing leads and start closing more deals.</p>
-      <a href="../contact.html" class="btn btn-primary">Build Your Pipeline <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Build Your Pipeline <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -371,51 +439,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm-sales-pipeline.html">CRM & Pipeline</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">GoHighLevel</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM & Pipeline</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">GoHighLevel</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-9860">Email address</label>
+              <input type="email" id="sub-email-9860" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

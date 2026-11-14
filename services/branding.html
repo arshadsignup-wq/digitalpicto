@@ -4,12 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Branding & Creative Services | Digital Picto</title>
-  <meta name="description" content="Professional branding services and brand identity design for SMEs. From brand strategy and visual identity to creative production, we build brands that stand out and drive growth.">
+  <meta name="description" content="Professional branding services and brand identity design for SMEs. From brand strategy and visual identity to creative production, we build brands that stand.">
   <meta name="keywords" content="brand identity design, branding services, brand strategy, creative production, visual identity">
-  <link rel="canonical" href="https://digitalpicto.online/services/branding.html">
+  <link rel="canonical" href="https://digitalpicto.online/services/branding">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Branding & Creative Services | Digital Picto">
+  <meta property="og:description" content="Professional branding services and brand identity design for SMEs. From brand strategy and visual identity to creative production, we build brands that stand.">
+  <meta property="og:url" content="https://digitalpicto.online/services/branding">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Branding & Creative Services | Digital Picto">
+  <meta name="twitter:description" content="Professional branding services and brand identity design for SMEs. From brand strategy and visual identity to creative production, we build brands that stand.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="preload" as="image" href="../assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
   {
@@ -37,23 +59,36 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalpicto.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://digitalpicto.online/services" },
+      { "@type": "ListItem", "position": 3, "name": "Branding & Identity", "item": "https://digitalpicto.online/services/branding" }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="../index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="../assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../services.html">Services</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="../services">Services</a>
+        <a href="../case-studies">Case Studies</a>
+        <a href="../virtual-assistants">Virtual Assistants</a>
+        <a href="../about">About</a>
+        <a href="../blog">Blog</a>
+        <a href="../contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -62,12 +97,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="../index.html">Home</a>
-    <a href="../services.html">Services</a>
-    <a href="../blog.html">Blog</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="../services">Services</a>
+    <a href="../case-studies">Case Studies</a>
+    <a href="../virtual-assistants">Virtual Assistants</a>
+    <a href="../about">About</a>
+    <a href="../blog">Blog</a>
+    <a href="../contact">Contact</a>
+    <a href="../contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Service Hero -->
@@ -75,20 +112,20 @@
     <div class="container">
       <div class="service-hero-content reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="sep">/</span>
-          <a href="../services.html">Services</a>
+          <a href="../services">Services</a>
           <span class="sep">/</span>
           <span>Branding</span>
         </nav>
         <h1 class="display-xl">Branding &amp;<br><span class="gradient-text">Creative</span></h1>
         <p class="service-desc">Your brand is the story people tell about your business when you are not in the room. It is the feeling they get when they see your logo, visit your website, or read one of your posts. And here is the thing: most SMEs are leaving that story to chance. A logo slapped together on a budget, colours picked at random, messaging that sounds like everyone else in the market. That is not a brand. That is just noise. Our branding services are built to change that. We help you define who you are, craft a visual identity that people remember, and create the kind of creative production that turns heads and builds trust. Whether you are starting fresh or need a complete rebrand, we give your business the identity it deserves.</p>
-        <a href="../contact.html" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
+        <a href="../contact" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- What's Included Section -->
   <section class="section">
@@ -99,44 +136,44 @@
       </div>
       <div class="includes-grid stagger-children">
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Brand Identity Design</h4>
+            <h3>Brand Identity Design</h3>
             <p>This is where your visual identity comes to life. We design a custom logo that captures who you are, define a colour palette that sets the right tone, and select typography that reinforces your personality. Every element is crafted to work together so your brand identity design feels cohesive, professional, and unmistakably yours.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Brand Guidelines Document</h4>
+            <h3>Brand Guidelines Document</h3>
             <p>A beautiful brand is useless if it gets applied inconsistently. We create a comprehensive brand guidelines document that covers logo usage rules, colour codes, typography specs, spacing, do's and don'ts, and everything your team or partners need to keep the brand looking sharp across every touchpoint.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Messaging Framework</h4>
+            <h3>Messaging Framework</h3>
             <p>Your brand strategy goes beyond visuals. We develop a clear messaging framework that defines your brand voice, tone, key messages, taglines, and value propositions. This gives you a consistent way to communicate with your audience, whether it is on your website, in an email, or across social media.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Marketing Collateral</h4>
+            <h3>Marketing Collateral</h3>
             <p>From business cards and letterheads to brochures and presentation decks, we design the essential marketing materials your business needs to make a strong impression. Every piece is built on your new visual identity so everything looks and feels connected.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Social Media Templates</h4>
+            <h3>Social Media Templates</h3>
             <p>Consistency on social media is what builds recognition over time. We create a library of branded templates for posts, stories, carousels, and cover images. Your team can easily customise them without worrying about going off-brand, saving time and keeping your feed looking polished.</p>
           </div>
         </div>
         <div class="include-item">
-          <div class="check-icon">&#10003;</div>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
           <div>
-            <h4>Video Production</h4>
+            <h3>Video Production</h3>
             <p>Video is the most powerful format for grabbing attention and telling your story. Our creative production team handles everything from concept and scripting to filming and editing, delivering brand videos, social clips, and campaign content that connects with your audience and drives real engagement.</p>
           </div>
         </div>
@@ -145,7 +182,7 @@
   </section>
 
   <!-- Our Process Section -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">Our Process</span>
@@ -191,23 +228,23 @@
       </div>
       <div class="results-grid stagger-children">
         <div class="result-card">
-          <div class="result-icon">&#127912;</div>
-          <h4>Instant Brand Recognition</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20.8a8.8 8.8 0 1 1 8.8-8.8c0 2-1.7 3-3.1 3h-1.9a2 2 0 0 0-1.4 3.4 2 2 0 0 1-1.4 2.4z"/><path d="M8 10h.01M11.5 7.6h.01M15.4 9.3h.01"/></svg></div>
+          <h3>Instant Brand Recognition</h3>
           <p>A strong visual identity makes your business recognisable at a glance. Across your website, social feeds, ads, and printed materials, people will know it is you before they even read a word. That kind of consistency builds familiarity, and familiarity builds trust.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128161;</div>
-          <h4>Clearer Market Positioning</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.2 18.2h5.6M10.2 21h3.6"/><path d="M12 3a6 6 0 0 1 3.7 10.8c-.6.5-1 1.3-1 2.1H9.3c0-.8-.4-1.6-1-2.1A6 6 0 0 1 12 3z"/></svg></div>
+          <h3>Clearer Market Positioning</h3>
           <p>When your brand strategy is well-defined, you stop blending in with competitors. Your messaging, visuals, and tone all work together to carve out a distinct position in the market. Customers understand exactly what makes you different and why they should choose you.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#128640;</div>
-          <h4>Stronger Customer Trust</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3c3 2.2 4.8 5.6 4.8 9.2L14 15.2h-4L7.2 12.2C7.2 8.6 9 5.2 12 3z"/><circle cx="12" cy="10" r="1.6"/><path d="M10 15.6l-2.2 4.2 3.2-1.1M14 15.6l2.2 4.2-3.2-1.1"/></svg></div>
+          <h3>Stronger Customer Trust</h3>
           <p>People buy from brands they trust. A polished, consistent brand identity signals professionalism and credibility. When every touchpoint feels intentional and aligned, customers feel more confident doing business with you, which means shorter sales cycles and higher conversion rates.</p>
         </div>
         <div class="result-card">
-          <div class="result-icon">&#10024;</div>
-          <h4>Content That Converts</h4>
+          <div class="result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 4.2l1.7 4.6 4.6 1.7-4.6 1.7L11 16.8 9.3 12.2 4.7 10.5l4.6-1.7z"/><path d="M18 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg></div>
+          <h3>Content That Converts</h3>
           <p>Great creative production does more than look good. It drives action. With branded templates, campaign visuals, and video content ready to go, your marketing team can move faster, post more consistently, and create content that actually resonates with your audience and brings in results.</p>
         </div>
       </div>
@@ -215,7 +252,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section faq-section">
+  <section class="section faq-section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">FAQ</span>
@@ -259,11 +296,35 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+
+  <!-- Proof -->
+  <section class="section section--band proof-strip">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Proof</span>
+        <h2 class="display-lg">We have done this before</h2>
+        <p class="text-lg subtitle">Campaigns in this discipline, with the client dashboards the numbers came from.</p>
+      </div>
+      <div class="case-grid">
+          <a class="case-card" href="../case-studies/wardrobe-by-syra">
+            <div class="case-card-top"><span class="case-num">03</span><span class="case-tag">Meta Ads &middot; Bangladesh</span></div>
+            <h3>Wardrobe By Syra</h3>
+            <p>Four Meta campaigns for a Bangladeshi fashion brand across two Eid seasons: 12,813 Messenger conversations at $0.04, 121 website purchases at $0.71, and an organic Reel that reached 333,110 views.</p>
+            <div class="case-chips"><span class="case-chip"><b>12,813</b> Messenger conversations, single campaign</span></div>
+            <span class="case-more">Read the case study <span class="arrow">&rarr;</span></span>
+          </a>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="../case-studies" class="btn btn-ghost">See all 16 case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Ready to Build a Brand That<br><span class="gradient-text">People Remember?</span></h2>
       <p class="text-lg">Let's talk about your business, your vision, and how we can turn it into a brand identity that stands out in a crowded market. No fluff, no jargon, just an honest conversation about what your brand needs to grow.</p>
-      <a href="../contact.html" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
+      <a href="../contact" class="btn btn-primary">Start Your Project <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -275,51 +336,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="../assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="../index.html">Home</a>
-          <a href="../services.html">Services</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="../services">Services</a>
+          <a href="../case-studies">Case Studies</a>
+          <a href="../virtual-assistants">Virtual Assistants</a>
+          <a href="../about">About</a>
+          <a href="../blog">Blog</a>
+          <a href="../contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="web-design.html">Web Design</a>
-          <a href="seo.html">SEO</a>
-          <a href="paid-advertising.html">Paid Ads</a>
-          <a href="social-media.html">Social Media</a>
-          <a href="email-automation.html">Email Marketing</a>
-          <a href="branding.html">Branding</a>
-          <a href="automations-workflow.html">Automations</a>
-          <a href="voice-ai.html">Voice AI</a>
-          <a href="conversational-ai.html">Conversational AI</a>
-          <a href="crm-sales-pipeline.html">CRM</a>
-          <a href="integrations.html">Integrations</a>
-          <a href="go-high-level.html">Go High Level</a>
-          <a href="virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="web-design">Web Design</a>
+          <a href="seo">SEO</a>
+          <a href="paid-advertising">Paid Ads</a>
+          <a href="social-media">Social Media</a>
+          <a href="email-automation">Email Marketing</a>
+          <a href="branding">Branding</a>
+          <a href="automations-workflow">Automations</a>
+          <a href="voice-ai">Voice AI</a>
+          <a href="conversational-ai">Conversational AI</a>
+          <a href="crm-sales-pipeline">CRM</a>
+          <a href="integrations">Integrations</a>
+          <a href="go-high-level">Go High Level</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="../search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-1064">Email address</label>
+              <input type="email" id="sub-email-1064" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="../privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="../terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/analytics.js" defer></script>
 </body>
 </html>

@@ -6,10 +6,32 @@
   <title>Digital Marketing Services | Digital Picto - Growth Agency</title>
   <meta name="description" content="Explore Digital Picto's full suite of digital marketing services: web design, SEO, paid advertising, social media, email marketing, and branding for SMEs.">
   <meta name="keywords" content="digital marketing services, web design, SEO services, paid advertising, social media marketing, email marketing, branding agency">
-  <link rel="canonical" href="https://digitalpicto.online/services.html">
+  <link rel="canonical" href="https://digitalpicto.online/services">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Picto">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Digital Marketing Services | Digital Picto - Growth Agency">
+  <meta property="og:description" content="Explore Digital Picto's full suite of digital marketing services: web design, SEO, paid advertising, social media, email marketing, and branding for SMEs.">
+  <meta property="og:url" content="https://digitalpicto.online/services">
+  <meta property="og:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digital Picto: we build the systems that turn your business into a growth machine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digital Marketing Services | Digital Picto - Growth Agency">
+  <meta name="twitter:description" content="Explore Digital Picto's full suite of digital marketing services: web design, SEO, paid advertising, social media, email marketing, and branding for SMEs.">
+  <meta name="twitter:image" content="https://digitalpicto.online/assets/og-image.png">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/logo.webp" fetchpriority="high">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
@@ -42,21 +64,23 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
   <canvas id="canvas-bg"></canvas>
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="index.html" class="nav-logo" aria-label="Digital Picto home">
-        <img src="assets/logo.webp" alt="Digital Picto logo" width="120" height="38">
+      <a href="/" class="nav-logo" aria-label="Digital Picto home">
+        <img src="assets/logo.webp" alt="Digital Picto logo" width="120" height="38" fetchpriority="high" decoding="async">
       </a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="btn btn-primary btn-sm nav-cta desktop-only">Get Started <span class="arrow">&rarr;</span></a>
+        <a href="/">Home</a>
+        <a href="services">Services</a>
+        <a href="case-studies">Case Studies</a>
+        <a href="virtual-assistants">Virtual Assistants</a>
+        <a href="about">About</a>
+        <a href="blog">Blog</a>
+        <a href="contact" class="btn btn-primary btn-sm nav-cta desktop-only">Get in Touch <span class="arrow">&rarr;</span></a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -65,12 +89,14 @@
   </nav>
 
   <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="btn btn-primary" style="margin-top:16px">Get Started</a>
+    <a href="/">Home</a>
+    <a href="services">Services</a>
+    <a href="case-studies">Case Studies</a>
+    <a href="virtual-assistants">Virtual Assistants</a>
+    <a href="about">About</a>
+    <a href="blog">Blog</a>
+    <a href="contact">Contact</a>
+    <a href="contact" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
   </div>
 
   <!-- Page Header -->
@@ -82,102 +108,103 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
   <!-- Services Overview Grid -->
   <section class="section" style="padding-top:0;">
     <div class="container">
+      <h2 class="display-lg" style="margin-bottom:44px;">What We Offer</h2>
       <div class="services-overview-grid stagger-children">
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9776;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.2l8.8 4.9-8.8 4.9-8.8-4.9z"/><path d="M3.2 13l8.8 4.9 8.8-4.9"/></svg></div>
           <h3>Web Design &amp; Development</h3>
           <p>Your website is the center of everything. We build fast, conversion-focused websites and landing pages that turn visitors into customers, not just viewers.</p>
-          <a href="services/web-design.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/web-design" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9733;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.7 6.1.9-4.4 4.3 1 6.1L12 17.2 6.6 20l1-6.1L3.2 9.6l6.1-.9z"/></svg></div>
           <h3>SEO Services</h3>
           <p>Get found by the people actively searching for what you offer. We handle everything from technical SEO to content strategy and link building.</p>
-          <a href="services/seo.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/seo" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9650;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 10.5v3a1 1 0 0 0 1 1H7l5.5 4V5.5L7 9.5H4.5a1 1 0 0 0-1 1z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg></div>
           <h3>Paid Advertising</h3>
           <p>Put your budget where it counts. We run Google Ads and Meta Ads campaigns built around data, testing, and continuous optimization for maximum ROI.</p>
-          <a href="services/paid-advertising.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/paid-advertising" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9829;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20.3S4 15.4 4 10a4.6 4.6 0 0 1 8-2.9A4.6 4.6 0 0 1 20 10c0 5.4-8 10.3-8 10.3z"/></svg></div>
           <h3>Social Media Marketing</h3>
           <p>Show up where your audience lives. We create content, build community, and turn followers into loyal customers through strategic social media management.</p>
-          <a href="services/social-media.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/social-media" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#8635;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 1 1-2.5-6"/><path d="M20.5 3v5h-5"/></svg></div>
           <h3>Email Marketing &amp; Automation</h3>
           <p>Stop leaving money on the table. We set up email sequences, CRM workflows, and automation systems that nurture leads and drive repeat revenue.</p>
-          <a href="services/email-automation.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/email-automation" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9830;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10.3" y="10.3" width="3.4" height="3.4" rx=".6"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"/></svg></div>
           <h3>Branding &amp; Creative</h3>
           <p>Look the part. We develop brand identities, messaging frameworks, and creative assets that make your business stand out and stick in people's minds.</p>
-          <a href="services/branding.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/branding" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9881;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.1"/><path d="M12 3v2.2M12 18.8V21M4.6 7.2l1.9 1.1M17.5 15.7l1.9 1.1M4.6 16.8l1.9-1.1M17.5 8.3l1.9-1.1M3 12h2.2M18.8 12H21"/></svg></div>
           <h3>Automations &amp; Workflow</h3>
           <p>Stop wasting hours on repetitive tasks. We design and build automated workflows that handle lead routing, follow-ups, notifications, and business processes so your team can focus on what matters.</p>
-          <a href="services/automations-workflow.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/automations-workflow" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#128266;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9.2" y="3" width="5.6" height="10" rx="2.8"/><path d="M5.4 11a6.6 6.6 0 0 0 13.2 0"/><path d="M12 17.6V21M9.4 21h5.2"/></svg></div>
           <h3>Voice AI</h3>
           <p>Never miss a call again. Our AI-powered voice solutions answer phones, route calls, schedule appointments, and handle customer enquiries 24/7 with natural-sounding conversations.</p>
-          <a href="services/voice-ai.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/voice-ai" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#128172;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 11.6a8.3 8.3 0 0 1-12 7.4L4 20.4l1.4-4.8a8.3 8.3 0 1 1 15.4-4z"/></svg></div>
           <h3>Conversational AI &amp; Chatbots</h3>
           <p>Engage every website visitor instantly with intelligent AI chatbots that answer questions, qualify leads, and book appointments around the clock across your website and social platforms.</p>
-          <a href="services/conversational-ai.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/conversational-ai" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#128202;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 20.4h18"/><path d="M6.2 20.4v-7.6M12 20.4V5.2M17.8 20.4v-5.4"/></svg></div>
           <h3>CRM &amp; Sales Pipeline</h3>
           <p>Track every lead from first touch to close. We set up and configure your CRM, design your sales pipeline, and build automated follow-up systems that keep deals moving forward.</p>
-          <a href="services/crm-sales-pipeline.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/crm-sales-pipeline" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#128279;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.2 13.2a4.8 4.8 0 0 0 6.8 0l2-2a4.8 4.8 0 0 0-6.8-6.8l-1 1"/><path d="M13.8 10.8a4.8 4.8 0 0 0-6.8 0l-2 2a4.8 4.8 0 0 0 6.8 6.8l1-1"/></svg></div>
           <h3>Integrations &amp; Plugins</h3>
           <p>Connect your tools so data flows automatically. We build custom API integrations, set up Zapier automations, and develop plugins that make your business systems work together seamlessly.</p>
-          <a href="services/integrations.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/integrations" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#9889;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.2 3L5.5 14h5.6l-1.3 7 7.7-11h-5.6z"/></svg></div>
           <h3>GoHighLevel</h3>
           <p>Get the most out of GoHighLevel. We handle full GHL setup, onboarding, workflow automation, funnel building, and ongoing management so you can run your marketing from one powerful platform.</p>
-          <a href="services/go-high-level.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/go-high-level" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
         <article class="service-overview-card">
-          <div class="soc-icon">&#128100;</div>
+          <div class="soc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.6"/><path d="M5 20.3a7 7 0 0 1 14 0"/></svg></div>
           <h3>Virtual Assistants</h3>
           <p>Delegate the work that slows you down. Our trained virtual assistants handle admin tasks, customer support, data entry, scheduling, and research so you can focus on growing your business.</p>
-          <a href="services/virtual-assistants.html" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
+          <a href="services/virtual-assistants" class="soc-link">View service details <span class="arrow">&rarr;</span></a>
         </article>
 
       </div>
@@ -185,7 +212,7 @@
   </section>
 
   <!-- How It All Connects -->
-  <section class="section" style="background: var(--bg-surface);">
+  <section class="section section--band">
     <div class="container">
       <div class="section-header reveal" style="text-align:center;">
         <span class="label" style="justify-content:center;">The System</span>
@@ -206,11 +233,11 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section cta-section">
+  <section class="section cta-section section--accent">
     <div class="container reveal">
       <h2 class="display-lg">Not Sure Where to Start?<br><span class="gradient-text">We'll Figure It Out Together.</span></h2>
       <p class="text-lg">Book a free growth audit and we'll identify exactly which services your business needs right now.</p>
-      <a href="contact.html" class="btn btn-primary">Book Your Free Audit <span class="arrow">&rarr;</span></a>
+      <a href="contact" class="btn btn-primary">Book Your Free Audit <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 
@@ -222,51 +249,66 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="assets/logo.webp" alt="Digital Picto logo" width="100" height="32">
+            <img src="assets/logo.webp" alt="Digital Picto logo" width="100" height="32" loading="lazy" decoding="async">
           </div>
           <p>Structured digital growth for businesses that want measurable results, not just marketing noise.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter">x</a>
+            <a href="mailto:Digitalpicto832@gmail.com" aria-label="Email Digital Picto">@</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <h3>Pages</h3>
+          <a href="/">Home</a>
+          <a href="services">Services</a>
+          <a href="case-studies">Case Studies</a>
+          <a href="virtual-assistants">Virtual Assistants</a>
+          <a href="about">About</a>
+          <a href="blog">Blog</a>
+          <a href="contact">Contact</a>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
-          <a href="services/web-design.html">Web Design</a>
-          <a href="services/seo.html">SEO</a>
-          <a href="services/paid-advertising.html">Paid Ads</a>
-          <a href="services/social-media.html">Social Media</a>
-          <a href="services/email-automation.html">Email Marketing</a>
-          <a href="services/branding.html">Branding</a>
-          <a href="services/automations-workflow.html">Automations</a>
-          <a href="services/voice-ai.html">Voice AI</a>
-          <a href="services/conversational-ai.html">Conversational AI</a>
-          <a href="services/crm-sales-pipeline.html">CRM</a>
-          <a href="services/integrations.html">Integrations</a>
-          <a href="services/go-high-level.html">Go High Level</a>
-          <a href="services/virtual-assistants.html">Virtual Assistants</a>
+          <h3>Services</h3>
+          <a href="services/web-design">Web Design</a>
+          <a href="services/seo">SEO</a>
+          <a href="services/paid-advertising">Paid Ads</a>
+          <a href="services/social-media">Social Media</a>
+          <a href="services/email-automation">Email Marketing</a>
+          <a href="services/branding">Branding</a>
+          <a href="services/automations-workflow">Automations</a>
+          <a href="services/voice-ai">Voice AI</a>
+          <a href="services/conversational-ai">Conversational AI</a>
+          <a href="services/crm-sales-pipeline">CRM</a>
+          <a href="services/integrations">Integrations</a>
+          <a href="services/go-high-level">Go High Level</a>
+          <a href="services/virtual-assistants">Virtual Assistants</a>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <a href="mailto:Digitalpicto832@gmail.com">Digitalpicto832@gmail.com</a>
+          <a href="search">Search the site</a>
+
+          <div class="footer-subscribe">
+            <h3>Get what's working</h3>
+            <p>Occasional notes on growth systems, automation and AI. No spam, unsubscribe anytime.</p>
+            <form class="subscribe-form" action="https://formspree.io/f/xlgwwygk" method="POST">
+              <input type="hidden" name="_subject" value="Newsletter signup from digitalpicto.online">
+              <input type="hidden" name="list" value="newsletter">
+              <label class="visually-hidden" for="sub-email-9897">Email address</label>
+              <input type="email" id="sub-email-9897" name="email" placeholder="you@company.com" required autocomplete="email">
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Digital Picto. All rights reserved.</span>
+        <span class="footer-legal"><a href="privacy">Privacy Policy</a><span class="sep-dot">&middot;</span><a href="terms">Terms of Service</a></span>
         <span>Engineered for growth.</span>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/analytics.js" defer></script>
 </body>
 </html>

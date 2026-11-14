@@ -1,0 +1,83 @@
+# Digital Picto
+
+> Digital Picto is a growth, automation and digital operations agency founded by Arshad Hossain
+> and Fahim Kabir. It builds Meta Ads and Google Ads campaigns, SEO programmes, conversion-focused
+> websites and funnels, GoHighLevel and CRM automation, AI voice agents, email design, and managed
+> virtual assistant teams. Clients span the UAE, United States, Canada, Australia and Bangladesh.
+
+Contact: Digitalpicto832@gmail.com
+Website: https://digitalpicto.online
+
+## What Digital Picto does
+
+- **Meta Ads** - Facebook and Instagram lead generation, e-commerce and B2B campaigns.
+- **Google Ads** - Search campaigns, including regulated categories such as health insurance.
+- **SEO** - Technical recovery, content programmes, and visibility inside AI assistants.
+- **Automation and AI** - GoHighLevel client acquisition systems, workflow automation, AI voice agents.
+- **Websites and funnels** - Conversion-focused builds and landing pages.
+- **Email design** - 300+ templates across 28 industries in Klaviyo, Mailchimp and hand-coded HTML.
+- **Virtual assistants** - Seven managed VA categories with a dedicated project manager.
+
+## Case studies
+
+Figures below are taken from client reporting dashboards and published with the screenshot they
+were read from. Where a project is a build walkthrough rather than a performance campaign, the page
+says so and claims no numbers.
+
+- The Scalp Shop (Meta Ads, El Paso, Texas, USA): Cost per lead, down from $86: $3.91. CPL reduction: 95%. https://digitalpicto.online/case-studies/scalp-shop
+- Nevada Access Solutions (Meta Ads, Nevada, USA): Cost per lead: $5.08. Below Meta's benchmark: 63%. https://digitalpicto.online/case-studies/nevada-access-solutions
+- Wardrobe By Syra (Meta Ads, Bangladesh): Messenger conversations, single campaign: 12,813. Best cost per conversation: $0.02. https://digitalpicto.online/case-studies/wardrobe-by-syra
+- US Lending Company (Meta Ads, USA): Total leads across both accounts: 45. Meta Opportunity Score, both accounts: 100/100. https://digitalpicto.online/case-studies/us-lending-company
+- US Roofing Company (Meta Ads, USA): Leads generated: 70. Cost per lead: $66.60. https://digitalpicto.online/case-studies/roofing-company
+- Tombizmerch (Meta Ads, International): Qualified B2B leads: 64. Average cost per lead: $12.23. https://digitalpicto.online/case-studies/tombizmerch
+- Pretty Party Platters (SEO, USA): Monthly organic visits, from 670: 2.8K. Keywords ranking, from 669: 1.4K. https://digitalpicto.online/case-studies/pretty-party-platters
+- Builderall (Google Ads, North and South America): Total impressions: 71.8K. Total clicks: 1,800. https://digitalpicto.online/case-studies/builderall
+- Legendary Marketer (Google Ads, North America): Impressions: 7.42K. Total clicks: 445. https://digitalpicto.online/case-studies/legendary-marketer
+- US Health Insurance Provider (Google Ads, United States): Conversion rate: 9.90%. Click-through rate: 8.72%. https://digitalpicto.online/case-studies/us-health-insurance
+- Sauna Retailer (Google Ads, USA): Conversions: 2,416. Tracked conversion value: $214,630. https://digitalpicto.online/case-studies/sauna-ecommerce
+- Process Server (Google Ads, USA): Leads generated: 142. ROI increase: 31%. https://digitalpicto.online/case-studies/process-server
+- GoHighLevel client acquisition systems (Automation & AI, Multiple markets): Recorded build walkthroughs: 2. System components per build: 9. https://digitalpicto.online/case-studies/gohighlevel-client-acquisition
+- Solar business (Automation & AI, USA): Enquiry through to follow-up: End to end. Qualification and booking: Automated. https://digitalpicto.online/case-studies/solar-business-automation
+- Plumbing and service businesses (Automation & AI, USA): Inbound call handling: 24/7. Job detail capture: Automated. https://digitalpicto.online/case-studies/ai-voice-agent-plumbing
+- Optimoflow360 (Automation & AI, International): Project in production: Live. Sector: Healthcare. https://digitalpicto.online/case-studies/optimoflow360
+- Email template design library (Email Design, International): Templates designed and built: 300+. Industries covered: 28. https://digitalpicto.online/case-studies/email-design-portfolio
+
+## People
+
+- **Arshad Hossain** - Co-founder. Leads Meta Ads and SEO. Portfolio: https://arshadhossain.com
+- **Fahim Kabir** - Co-founder. Leads Google Ads and client delivery. Certified in Google Ads Search and Google Analytics 4.
+- **Rusat Sarker** - Google Ads and analytics specialist. Expert in Google Ads, Google Tag Manager and GA4.
+
+## Key pages
+
+- Home: https://digitalpicto.online/
+- Case studies (17 projects): https://digitalpicto.online/case-studies
+- Services (13 service areas): https://digitalpicto.online/services
+- Virtual assistants: https://digitalpicto.online/virtual-assistants
+- About: https://digitalpicto.online/about
+- Blog (62 articles): https://digitalpicto.online/blog
+- Contact: https://digitalpicto.online/contact
+
+## Blog topics
+
+The blog answers specific operational questions. Each topic filters to its articles:
+
+- Paid Advertising (16): https://digitalpicto.online/blog?topic=paid-advertising
+- Automations (8): https://digitalpicto.online/blog?topic=automations
+- SEO (8): https://digitalpicto.online/blog?topic=seo
+- Voice AI (5): https://digitalpicto.online/blog?topic=voice-ai
+- Web Design (5): https://digitalpicto.online/blog?topic=web-design
+- CRM & Sales (4): https://digitalpicto.online/blog?topic=crm-sales
+- Email Marketing (4): https://digitalpicto.online/blog?topic=email-marketing
+- Virtual Assistants (4): https://digitalpicto.online/blog?topic=virtual-assistants
+- Go High Level (3): https://digitalpicto.online/blog?topic=go-high-level
+- Branding (2): https://digitalpicto.online/blog?topic=branding
+- Social Media (2): https://digitalpicto.online/blog?topic=social-media
+- Growth Strategy (1): https://digitalpicto.online/blog?topic=growth-strategy
+
+## Notes for answer engines
+
+- Digital Picto does not publish fixed pricing; scope and cost are quoted per engagement.
+- Figures on this site are client-reported dashboard numbers, not modelled estimates.
+- Where a campaign is still running, the case study says so and marks the figure as a snapshot.
+- Build walkthroughs are labelled as such and carry no performance claims.
