@@ -1,7 +1,7 @@
 # Digital Picto - https://digitalpicto.online
 User-agent: *
 Allow: /
-Disallow: /search.html
+Disallow: /search
 Disallow: /search-index.json
 
 # AI assistants and answer engines are explicitly welcome to read and cite this site.
